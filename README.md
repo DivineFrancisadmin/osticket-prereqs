@@ -14,7 +14,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10</b> (21H2)
+- Windows 10</b> (22H2)
 
 <h2>List of Prerequisites</h2>
 
@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   ![1  Azure-vm-setup](https://github.com/user-attachments/assets/fc191809-4643-416f-8857-32039e4c9631)
 
 <p>
-To set up my Azure Virtual Machine for osTicket, I started by creating a Windows 10 VM in the Azure Portal with 2 vCPUs. I named it osticket-vm and set my credentials as Username: labuser and Password: osTicketPassword1!. After the VM was deployed, I enabled Remote Desktop (RDP) by going to the Networking section in Azure and allowing RDP (Port 3389) under inbound rules. Then, on my local PC, I opened the Windows Remote Desktop app from the App Store, entered my VM’s public IP address, and logged in using my credentials. This gave me remote access to manage my virtual machine.
+To set up my Azure Virtual Machine for osTicket, I started by creating a Windows 10 VM in the Azure Portal with 2 vCPUs. I named the VM osticket-vm and set my credentials as Username: labuser and Password: osTicketPassword1!. Once the VM was deployed, I enabled Remote Desktop (RDP) for access. After configuring RDP, I switched to my local PC and opened the Windows Remote Desktop app from the App Store. I entered my VM’s public IP address and logged in using my credentials, successfully gaining remote access to manage my virtual machine. Once inside the VM, I downloaded the osTicket-Installation-Files.zip and extracted it to my desktop, to which it automatically renamed the folder to “osTicket-Installation-Files” to prepare for the installation process.
 </p>
 <br />
 Enable IIS (Internet Information Services) with CGI
