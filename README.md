@@ -35,7 +35,6 @@ To set up my Azure Virtual Machine for osTicket, I started by creating a Windows
 </p>
 <br />
 Enable IIS (Internet Information Services) with CGI
-<p>
 <img width="1135" alt="2  IIS-CGI" src="https://github.com/user-attachments/assets/3b3cef2f-2f8d-4aab-a78b-d190908f2d22" />
 </p>
 <p>
@@ -47,4 +46,12 @@ Install Required Software & Dependencies
 <img width="498" alt="3d  MySQL-install" src="https://github.com/user-attachments/assets/856bf4c5-43c7-43d3-a415-664a71ed6d49" />
 <p>
   After enabling IIS with CGI, I proceeded with installing the necessary dependencies for osTicket. First, I installed PHP Manager for IIS by running PHPManagerForIIS_V1.5.0.msi from the osTicket installation folder. Next, I installed the Rewrite Module using rewrite_amd64_en-US.msi, which helps with URL rewriting in IIS. Then, I installed the Microsoft VC++ Redistributable (VC_redist.x86.exe), which is required for PHP and MySQL to function properly. After that, I created a directory at C:\PHP and unzipped PHP 7.3.8 into this location. Finally, I installed MySQL 5.5.62, ensuring that I set the username as root and the password as root. These steps prepared my environment for running osTicket smoothly on my virtual machine.
+<p>
+<br />
+Configure IIS and PHP
+</p>
+<img width="1065" alt="4  PHP Registration" src="https://github.com/user-attachments/assets/7dcea664-90ce-4c6c-b17b-99a505433be6" />
+<p>
+ To configure IIS and PHP on my Azure Virtual Machine, I first registered PHP in IIS by opening PHP Manager and setting the path to C:\PHP\php-cgi.exe. After registering PHP, I needed to reload IIS to apply the changes. I did this by stopping and then restarting the IIS server. Once IIS was reloaded, I enabled the necessary PHP extensions by going back into PHP Manager, selecting “Enable or disable an extension”, and enabling php_imap.dll, php_intl.dll, and php_opcache.dll. These steps ensured that PHP was correctly set up and fully functional for running osTicket. 
+</p>
 
