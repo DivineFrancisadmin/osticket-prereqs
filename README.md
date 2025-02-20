@@ -54,4 +54,10 @@ Configure IIS and PHP
 <p>
  To configure IIS and PHP on my Azure Virtual Machine, I first registered PHP in IIS by opening PHP Manager and setting the path to C:\PHP\php-cgi.exe. After registering PHP, I needed to reload IIS to apply the changes. I did this by stopping and then restarting the IIS server. Once IIS was reloaded, I enabled the necessary PHP extensions by going back into PHP Manager, selecting “Enable or disable an extension”, and enabling php_imap.dll, php_intl.dll, and php_opcache.dll. These steps ensured that PHP was correctly set up and fully functional for running osTicket. 
 </p>
+<br />
+Set Up osTicket and Database
+<p>
+ <img width="936" alt="5f  osTicket-database" src="https://github.com/user-attachments/assets/9fc4a852-f8d3-43db-8f06-82050cafa574" />
+</p>
+I set up osTicket and its database by first unzipping the osTicket v1.15.8 files and moved the upload folder to C:\inetpub\wwwroot\osTicket. Next, I renamed ost-sampleconfig.php to ost-config.php to prepare for configuration. Then, I adjusted the file permissions by disabling inheritance, removing all existing permissions, and setting Everyone to Full Control to ensure proper access. After that, I installed HeidiSQL and created a new database named osTicket. Finally, I completed the osTicket setup through the browser by navigating to http://localhost/osTicket/ and sign in with my credentials. 
 
