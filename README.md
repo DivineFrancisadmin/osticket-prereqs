@@ -19,7 +19,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Azure Virtual Setup
-- Install IIS (Internet Information Services) with CGI
+- Enable IIS (Internet Information Services) with CGI
 - Install Required Software & Dependencies
 - Configure IIS and PHP
 - Set Up osTicket and Database
@@ -31,14 +31,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   ![1  Azure-vm-setup](https://github.com/user-attachments/assets/fc191809-4643-416f-8857-32039e4c9631)
 
 <p>
-To set up my Azure Virtual Machine for osTicket, I started by creating a Windows 10 VM in the Azure Portal with 2 vCPUs. I named it osticket-vm and set my credentials as Username: labuser and Password: osTicketPassword1!. After the VM was deployed, I enabled Remote Desktop (RDP) by going to the Networking section in Azure and allowing RDP (Port 3389) under inbound rules. Then, on my local PC, I opened the Microsoft Remote Desktop app from the Windows Store, entered my VM’s public IP address, and logged in using my credentials. This gave me remote access to manage my virtual machine.
+To set up my Azure Virtual Machine for osTicket, I started by creating a Windows 10 VM in the Azure Portal with 2 vCPUs. I named it osticket-vm and set my credentials as Username: labuser and Password: osTicketPassword1!. After the VM was deployed, I enabled Remote Desktop (RDP) by going to the Networking section in Azure and allowing RDP (Port 3389) under inbound rules. Then, on my local PC, I opened the Windows Remote Desktop app from the App Store, entered my VM’s public IP address, and logged in using my credentials. This gave me remote access to manage my virtual machine.
 </p>
 <br />
-
+Enable IIS (Internet Information Services) with CGI
 <p>
 <img width="1135" alt="2  IIS-CGI" src="https://github.com/user-attachments/assets/3b3cef2f-2f8d-4aab-a78b-d190908f2d22" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+After successfully connecting to my Azure Virtual Machine via Remote Desktop, I proceeded to enable IIS with CGI to prepare for the osTicket installation. I started by opening the Control Panel, then navigated to Programs and Features and selected Turn Windows features on or off. From there, I expanded Internet Information Services (IIS) and then World Wide Web Services. Under Application Development Features, I checked the box for CGI to enable it. Once selected, I clicked OK and waited for Windows to apply the changes. This step ensured that IIS was properly configured with CGI support for the upcoming osTicket setup.</p>
 <br />
