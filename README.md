@@ -57,7 +57,7 @@ Configure IIS and PHP
 <br />
 Set Up osTicket and Database
 <p>
- <img width="936" alt="5f  osTicket-database" src="https://github.com/user-attachments/assets/9fc4a852-f8d3-43db-8f06-82050cafa574" />
+<img width="1032" alt="5g  osticket browser" src="https://github.com/user-attachments/assets/7cf9ce3b-551c-4f79-8551-ae1dcbfe610b" />
 </p>
 I set up osTicket and its database by first unzipping the osTicket v1.15.8 files and moved the upload folder to C:\inetpub\wwwroot\osTicket. Next, I renamed ost-sampleconfig.php to ost-config.php to prepare for configuration. Then, I adjusted the file permissions by disabling inheritance, removing all existing permissions, and setting Everyone to Full Control to ensure proper access. After that, I installed HeidiSQL and created a new database named osTicket. Finally, I completed the osTicket setup through the browser by navigating to http://localhost/osTicket/ and sign in with my credentials. 
 
