@@ -41,3 +41,11 @@ Enable IIS (Internet Information Services) with CGI
 <p>
 After successfully connecting to my Azure Virtual Machine via Remote Desktop, I proceeded to enable IIS with CGI to prepare for the osTicket installation. I started by opening the Control Panel, then navigated to Programs and Features and selected Turn Windows features on or off. From there, I expanded Internet Information Services (IIS) and then World Wide Web Services. Under Application Development Features, I checked the box for CGI to enable it. Once selected, I clicked OK and waited for Windows to apply the changes. This step ensured that IIS was properly configured with CGI support for the upcoming osTicket setup.</p>
 <br />
+<p>
+Install Required Software & Dependencies
+<p></p>
+<img width="498" alt="3d  MySQL-install" src="https://github.com/user-attachments/assets/856bf4c5-43c7-43d3-a415-664a71ed6d49" />
+<p>
+  
+
+
