@@ -46,6 +46,5 @@ Install Required Software & Dependencies
 <p></p>
 <img width="498" alt="3d  MySQL-install" src="https://github.com/user-attachments/assets/856bf4c5-43c7-43d3-a415-664a71ed6d49" />
 <p>
-  
-
+  After enabling IIS with CGI, I proceeded with installing the necessary dependencies for osTicket. First, I installed PHP Manager for IIS by running PHPManagerForIIS_V1.5.0.msi from the osTicket installation folder. Next, I installed the Rewrite Module using rewrite_amd64_en-US.msi, which helps with URL rewriting in IIS. Then, I installed the Microsoft VC++ Redistributable (VC_redist.x86.exe), which is required for PHP and MySQL to function properly. After that, I created a directory at C:\PHP and unzipped PHP 7.3.8 into this location. Finally, I installed MySQL 5.5.62, ensuring that I set the username as root and the password as root. These steps prepared my environment for running osTicket smoothly on my virtual machine.
 
