@@ -19,7 +19,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Azure Virtual Setup
-- Install Internet Information Services (IIS) with CGI
+- Install IIS (Internet Information Services) with CGI
 - Install Required Software & Dependencies
 - Configure IIS and PHP
 - Set Up osTicket and Database
